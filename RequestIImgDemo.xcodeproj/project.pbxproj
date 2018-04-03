@@ -21,7 +21,6 @@
 		D0128BB32060DDD8003DB25E /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0128BB12060DDD8003DB25E /* ImageTableViewCell.swift */; };
 		D0128BB42060DDD8003DB25E /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0128BB22060DDD8003DB25E /* ImageTableViewCell.xib */; };
 		D023CFDF20614AD300EE4CF8 /* CacheImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023CFDE20614AD300EE4CF8 /* CacheImageView.swift */; };
-		D052574B20650F0800C9781D /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D052574A20650F0800C9781D /* DownloadService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +40,6 @@
 		D0128BB12060DDD8003DB25E /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		D0128BB22060DDD8003DB25E /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		D023CFDE20614AD300EE4CF8 /* CacheImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImageView.swift; sourceTree = "<group>"; };
-		D052574A20650F0800C9781D /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,22 +74,37 @@
 			children = (
 				D0128BB12060DDD8003DB25E /* ImageTableViewCell.swift */,
 				D0128BB22060DDD8003DB25E /* ImageTableViewCell.xib */,
-				D0128BAB2060DA15003DB25E /* ListInfo.swift */,
 				D0128BA92060D8E4003DB25E /* APIManager.swift */,
 				D023CFDE20614AD300EE4CF8 /* CacheImageView.swift */,
-				D052574A20650F0800C9781D /* DownloadService.swift */,
-				D0128B8F205F8C56003DB25E /* AppDelegate.swift */,
 				D0128B91205F8C56003DB25E /* ViewController.swift */,
 				D0128BA1205F8C74003DB25E /* ListViewController.swift */,
 				D0128BA5205F918A003DB25E /* ListViewModel.swift */,
-				D0128BA7205FFC2F003DB25E /* Photo.swift */,
 				D0128BA2205F8C74003DB25E /* ListViewController.xib */,
 				D0128B93205F8C56003DB25E /* Main.storyboard */,
+				D0D900D120731AA000F6CDB0 /* Model */,
+				D0D900D020731A3700F6CDB0 /* Supporting files */,
+			);
+			path = RequestIImgDemo;
+			sourceTree = "<group>";
+		};
+		D0D900D020731A3700F6CDB0 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				D0128B8F205F8C56003DB25E /* AppDelegate.swift */,
 				D0128B96205F8C56003DB25E /* Assets.xcassets */,
 				D0128B98205F8C56003DB25E /* LaunchScreen.storyboard */,
 				D0128B9B205F8C56003DB25E /* Info.plist */,
 			);
-			path = RequestIImgDemo;
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		D0D900D120731AA000F6CDB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0128BAB2060DA15003DB25E /* ListInfo.swift */,
+				D0128BA7205FFC2F003DB25E /* Photo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +186,6 @@
 				D0128B92205F8C56003DB25E /* ViewController.swift in Sources */,
 				D0128B90205F8C56003DB25E /* AppDelegate.swift in Sources */,
 				D0128BA6205F918A003DB25E /* ListViewModel.swift in Sources */,
-				D052574B20650F0800C9781D /* DownloadService.swift in Sources */,
 				D0128BAC2060DA15003DB25E /* ListInfo.swift in Sources */,
 				D0128BA3205F8C74003DB25E /* ListViewController.swift in Sources */,
 				D0128BA8205FFC2F003DB25E /* Photo.swift in Sources */,
@@ -315,10 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N7BE72QDW7;
-				INFOPLIST_FILE = RequestIImgDemo/Info.plist;
+				DEVELOPMENT_TEAM = S9TM6MXH8A;
+				INFOPLIST_FILE = "$(SRCROOT)/RequestIImgDemo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Din.Project.Demo.RequestIImgDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = DinDin.Project.Demo.RequestImgDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,10 +342,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N7BE72QDW7;
-				INFOPLIST_FILE = RequestIImgDemo/Info.plist;
+				DEVELOPMENT_TEAM = S9TM6MXH8A;
+				INFOPLIST_FILE = "$(SRCROOT)/RequestIImgDemo/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Din.Project.Demo.RequestIImgDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = DinDin.Project.Demo.RequestImgDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
