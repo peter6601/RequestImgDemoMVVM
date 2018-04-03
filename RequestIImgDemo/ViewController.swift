@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func enter(_ sender: UIButton) {
+        let type = PhotoListType(rawValue: sender.titleLabel?.text ?? "")
+        
+        let vc = ListViewController(nibName: "ListViewController", bundle: nil)
+        vc.bind(type: type)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
