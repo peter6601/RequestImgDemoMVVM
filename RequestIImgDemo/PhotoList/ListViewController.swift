@@ -30,6 +30,7 @@ class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        APIManager.shared.setProvider()
         requestData()
 
     }
